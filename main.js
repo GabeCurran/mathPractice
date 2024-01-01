@@ -22,6 +22,9 @@ let submit = document.querySelector('.submit');
 let problem = document.querySelector('.problem');
 let operator = "+";
 
+let popup = document.querySelector('.popup');
+popup.addEventListener('click', popupPoints);
+
 function addPoint(operator) {
     switch(operator) {
         case '+':
@@ -181,6 +184,10 @@ function start() {
             updatePoints();
         }
     });
+}
+
+function popupPoints() {
+    alert(`You are at ${pointsValue} points!`);
 }
 
 let answer = generateMathProblem(operator);

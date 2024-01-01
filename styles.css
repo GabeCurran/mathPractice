@@ -14,12 +14,16 @@
     box-sizing: border-box;
 }
 
+body {
+    height: auto;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     font-size: 3em;
 }
 
@@ -47,12 +51,26 @@ main {
     border: none;
     background-color: #cdcdcd;
     color: #2b2b2b;
-    cursor: pointer;}
+    cursor: pointer;
+}
 
 .points {
     text-align: center;
     border-bottom: 3px solid #cdcdcd;
     width: 100%;
+}
+
+.popup {
+    width: 8em;
+    height: 2em;
+    margin: 0.5em;
+    padding: 0;
+    font-size: 0.75em;
+    border-radius: 0.25em;
+    border: none;
+    background-color: #cdcdcd;
+    color: #2b2b2b;
+    cursor: pointer;
 }
 
 .pointsContainer {
